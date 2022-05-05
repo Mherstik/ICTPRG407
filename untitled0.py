@@ -11,7 +11,9 @@ print("Your age is " + str(age))
 
 
 if age >= 13:
-    print("Age is 13 or over")
+    #print("Age is 13 or over")
+    if age <= 19:
+        print("You are a teenager")
 else:
     print("Age is less than 13")
 
