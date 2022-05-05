@@ -7,11 +7,11 @@ Created on Fri May  6 08:21:21 2022
 
 age = int(input("What is your age: "))
 print("Your age is", age)
-print("Your age is" + str(age))
+print("Your age is " + str(age))
 
 
 if age >= 13:
-    print("Age is over 13")
+    print("Age is 13 or over")
 else:
     print("Age is less than 13")
 
