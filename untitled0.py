@@ -5,14 +5,39 @@ Created on Fri May  6 08:21:21 2022
 @author: Marcus Herstik
 """
 
+age = int("What is your age: ")
 
-age = int(input("what is your age: "))
 
-if age < 18:
-    print("You receive a 20% discount")
-    
-print("Please follow the waiter")
 
+### Part 3
+
+# =============================================================================
+# mark = int(input("What did you score: "))
+# 
+# if (mark < 50):
+#     print("Fail")
+# elif mark < 65:
+#     print("Pass")
+# elif mark < 75:
+#     print("Credit")
+# elif mark < 85:
+#     print("Distinction")
+# else:
+#     print("HD")
+# =============================================================================
+
+### Part 2
+
+# =============================================================================
+# age = int(input("what is your age: "))
+# 
+# if age != 18:
+#     print("You receive a 20% discount")
+#     print("Ice-cream is delicious")
+# print("Please follow the waiter")
+# =============================================================================
+
+### Part 1
 
 # =============================================================================
 # # name = "Tom"
