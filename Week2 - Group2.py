@@ -5,27 +5,82 @@ Created on Fri May  6 13:00:54 2022
 @author: Marcus Herstik
 """
 
-# a = int(input("Give integer: "))
-# b = int(input("Give integer: "))
-# c = int(input("Give integer: "))
-
-# print(a+b+c)
-
-# d = float(input("Give me a decimal: "))
-# e = float(input("Give me a decimal: "))
-# f = float(input("Give me a decimal: "))
-# print(d*e/f)
-          
-# print(int(d))
 
 
-r = float(input("Radius of circle is: "))
-rDiameter  = r*2
-rArea = 3.14159 * r**2
+print("This is a code area") # this is an inline comment
 
-print("Radius:", r, "Diameter:", rDiameter, "Area:", rArea )
+# THis is a comment
 
-print("Radius: %.1f Diameter: %.1f Area: %.4f" %(r, r*2, 3.14159*r**2))
+'''
+This is the problem statement
+
+Come up with pseudocode to calculate an employee’s pay
+Consider such things as:
+Gross salary is hours * hourly wage
+Do they get commissions, a bonus?
+How to deduct PAYG tax
+Other deductions: super, salary sacrifice etc.
+
+'''
+### Marcus pseudocode
+
+net = 0
+bonusAmount = 0
+
+# get employee hourly rate
+hourlyRate = float(input("What is your hourly rate: "))
+
+# find out how many hours worked
+hoursWorked = float(input("How many hours were worked in the last fortnight: "))
+
+# multiply hourly rate x hours worked
+gross = hoursWorked * hourlyRate
+
+# add any commissions
+bonus = str(input("Did you recieve a bonus this fortnight (y/n): "))
+if bonus.lower() == "yes" or bonus.lower() == "y":
+    bonusAmount = float(input("How much did you earn (in $$): "))
+# else: 
+#     bonusAmount = 0
+
+gross = gross + bonusAmount
+print("Your gross is $"+str(gross))
+
+# deduct any tax @15%, super @10%, salary sacrifice 100/pm, student loans 80 p/m
+net = gross - (gross * .15) - (gross * .1) - (100/4) - (80/4)
+
+taxedGross = gross * .15
+deductedGross = gross * .1
+
+net2 = gross - taxedGross - deductedGross - (100/4) - (80/4)
+# provide final pay
+
+print("You earned $"+str(net))
+print("You earned NET2 $"+str(net2))
+
+# =============================================================================
+# # a = int(input("Give integer: "))
+# # b = int(input("Give integer: "))
+# # c = int(input("Give integer: "))
+# 
+# # print(a+b+c)
+# 
+# # d = float(input("Give me a decimal: "))
+# # e = float(input("Give me a decimal: "))
+# # f = float(input("Give me a decimal: "))
+# # print(d*e/f)
+#           
+# # print(int(d))
+# 
+# 
+# # r = float(input("Radius of circle is: "))
+# # rDiameter  = r*2
+# # rArea = 3.14159 * r**2
+# 
+# # print("Radius:", r, "Diameter:", rDiameter, "Area:", rArea )
+# 
+# # print("Radius: %.1f Diameter: %.1f Area: %.6f" %(r, r*2, 3.14159*r**2))
+# =============================================================================
 
 #################
 
