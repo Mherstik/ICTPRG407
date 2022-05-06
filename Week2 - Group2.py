@@ -5,20 +5,36 @@ Created on Fri May  6 13:00:54 2022
 @author: Marcus Herstik
 """
 
-## Get mark from student and say grade
+age = int(input("what is your age? "))
 
-mark = int(input("What is your grade? "))
-           
-if mark < 50:
-    print("Fail")
-elif mark < 65:
-    print("Pass")
-elif mark < 75:
-    print("Credit")
-elif mark < 85:
-    print("DN")
+if age >= 13:
+    print("You are over 13")
+    if age <=19:
+        print("You are under 19")
+        print("you are a teenager")
+
 else:
-    print ("HD")
+    print("you are too young")
+    
+
+
+
+# =============================================================================
+# ## Get mark from student and say grade
+# 
+# mark = int(input("What is your grade? "))
+#            
+# if mark < 50:
+#     print("Fail")
+# elif mark < 65:
+#     print("Pass")
+# elif mark < 75:
+#     print("Credit")
+# elif mark < 85:
+#     print("DN")
+# else:
+#     print ("HD")
+# =============================================================================
 
 
 
