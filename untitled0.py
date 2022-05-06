@@ -5,18 +5,35 @@ Created on Fri May  6 08:21:21 2022
 @author: Marcus Herstik
 """
 
-age = int(input("What is your age: "))
-print("Your age is", age)
-print("Your age is " + str(age))
 
 
-if age >= 13:
-    #print("Age is 13 or over")
-    if age <= 19:
-        print("You are a teenager")
-else:
-    print("Age is less than 13")
 
+### BREAK 
+
+# =============================================================================
+# age = int(input("What is your age: "))
+# print("Your age is", age)
+# print("Your age is " + str(age))
+# 
+# 
+# if age >= 13:
+#     #print("Age is 13 or over")
+#     if age <= 19:
+#         print("You are a teenager")
+#     #elif age >19:
+#     else:
+#         print("You are too old")
+# else:
+#     print("Age is less than 13")
+#     
+# 
+# if age >= 13 and age <= 19:
+#     print("1 line- you are a teenager")
+# else: 
+#     print("You are the wrong age")
+# 
+# print("You have reached the end")
+# =============================================================================
 
 ### Part 3
 
