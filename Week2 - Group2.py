@@ -56,7 +56,8 @@ net2 = gross - taxedGross - deductedGross - (100/4) - (80/4)
 # provide final pay
 
 print("You earned $"+str(net))
-print("You earned NET2 $"+str(net2))
+print("You earned NET2 $%.2f" %(net2))  # this is an inline comment
+
 
 # =============================================================================
 # # a = int(input("Give integer: "))
