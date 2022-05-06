@@ -5,16 +5,30 @@ Created on Fri May  6 13:00:54 2022
 @author: Marcus Herstik
 """
 
-age = int(input("what is your age? "))
 
-if age >= 13:
-    print("You are over 13")
-    if age <=19:
-        print("You are under 19")
-        print("you are a teenager")
 
-else:
-    print("you are too young")
+
+
+number = (27*4+5) / 5 **2
+
+print(number)
+
+
+# =============================================================================
+# age = int(input("what is your age? "))
+# 
+# if age >= 13:
+#     print("You are over 13")
+#     if age <=19:
+#         print("You are under 19")
+#         print("you are a teenager")
+#     elif age >19:
+#         print("you are too old")
+#     else:
+#         print("Never get to!!")
+# else:
+#     print("you are too young")
+# =============================================================================
     
 
 
