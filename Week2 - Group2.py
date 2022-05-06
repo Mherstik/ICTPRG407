@@ -6,11 +6,24 @@ Created on Fri May  6 13:00:54 2022
 """
 
 
-year = 2022 
-myAge = input("what year where you born")
-currentAge = year - myAge
-print("I am " + str(currentAge) + " this year")
+print("Welcome to the Python Restaurant")
+name = input("What is your name? ")
+print("Nice to meet you", name)
 
+age = int(input("what is your age? "))
+
+if age < 18:
+    print("You get 20% off")
+    
+print("Please follow the waiter")
+
+# =============================================================================
+# year = 2022 
+# myAge = int(input("what year where you born "))
+# currentAge = year - myAge
+# print("I am " + str(currentAge) + " this year")
+# 
+# =============================================================================
 
 # =============================================================================
 # ### Revision
