@@ -5,14 +5,35 @@ Created on Fri May  6 13:00:54 2022
 @author: Marcus Herstik
 """
 
+# a = int(input("Give integer: "))
+# b = int(input("Give integer: "))
+# c = int(input("Give integer: "))
+
+# print(a+b+c)
+
+# d = float(input("Give me a decimal: "))
+# e = float(input("Give me a decimal: "))
+# f = float(input("Give me a decimal: "))
+# print(d*e/f)
+          
+# print(int(d))
 
 
+r = float(input("Radius of circle is: "))
+rDiameter  = r*2
+rArea = 3.14159 * r**2
 
+print("Radius:", r, "Diameter:", rDiameter, "Area:", rArea )
 
-number = (27*4+5) / 5 **2
+print("Radius: %.1f Diameter: %.1f Area: %.4f" %(r, r*2, 3.14159*r**2))
 
-print(number)
+#################
 
+#####
+## 
+## BREAK
+##
+#####
 
 # =============================================================================
 # age = int(input("what is your age? "))
