@@ -6,26 +6,78 @@ Created on Fri May  6 08:21:21 2022
 """
 
 
+## Calculate wages
+
+import random
+
+hourlyWage = random.randrange(35, 50)
+#print(hourlyWage)
+
+#test = random.choice(["cybersecurity","W10","potato","Smelly marcus","python"])
+#print(test)
 
 # get hours worked
+hoursWorked = float(input("How many hours did you work this week: "))
+
 # gross = hours worked * hourly wage
+# hourlyWage = float(input("What is your hourly rate: "))
+gross = hoursWorked * hourlyWage
+
+
 # if commissions new gross = gross + comission
-# remove tax = net
-# remove super + salary sac etc = net
+commission = input("Did you get a commission? Y or N: ")
+if commission == "Yes" or commission == "Y" or commission == "y":
+    commRate = float(input("What is the commission amount in $$: "))
+    gross = gross + commRate
+
+# remove tax @ 15% 
+net = gross - (gross *.15)
+
+# remove super @10% + salary sac = $50 p/m, studnet loan = $100p/m etc = net
+net = net - (net *.1) - (50/4) - (100/4)
 # put net in bank account
-
-'''
-Repeat until no swapping was done {
-    For each position in the list from lowest up to (not including) highest {
-            If the element at this position is bigger than the next position {
-                Swap this element and the next element
-                Record that a swap was done
-                }
-            }
-    }
+print("You will receive: $" + str(net))
 
 
-'''
+
+
+# =============================================================================
+# ### Pseudocode Example
+# Repeat until no swapping was done {
+#     For each position in the list from lowest up to (not including) highest {
+#             If the element at this position is bigger than the next position {
+#                 Swap this element and the next element
+#                 Record that a swap was done
+#                 }
+#             }
+#     }
+# # preswap
+# [21, 15, 99, 77, 45, 56]
+# 
+# ## 1st swap
+# 
+# [15, 22, 99, 77, 45, 56]
+# 
+# ## 2nd swap
+# [15, 22, 77, 99, 45, 56]
+# 
+# ## 3rd swap
+# [15, 22, 77, 45, 99, 56]
+# 
+# ## 4th
+# [15, 22, 77, 45, 56, 99 ]
+# 
+# ## 5
+# [15, 22, 45, 77, 56, 99 ]
+# 
+# ## 6
+# [15, 22, 45, 56, 77, 99 ]
+# 
+# =============================================================================
+
+
+## Part 1 post break
+
 
 # =============================================================================
 # # a = int(input("Enter 1st integer: "))
