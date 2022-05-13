@@ -5,38 +5,53 @@ Created on Fri May 13 13:13:28 2022
 @author: Marcus
 """
 
-### Create a box
+# ### Create a box
+# ## test - print a character 4 times
+
+# #print(4*"t")
+
+# ## how many rows
+# rows = 0
+# rows = int(input("How many rows? "))
+
+# ## how many columns
+# columns = 0
+# columns = int(input("How many columns? "))
+
+# print("/" + ((columns-2)*"-") + "\\" )
+# for i in range (rows - 2):
+#     print(("|" + (columns-2)*" ")+"|")
+# print("\\" + ((columns-2)*"-") + "/" )
 
 
+########################
 
 
-# =============================================================================
-# nameList = []
-# numList = []
-# 
-# name = "dummy name"
-# number = 0
-# 
-# while name != '':
-#     name = input("Enter a name: ")
-#     # nameList.append(name)
-#     # if name.isdigit():
-#     #     print("No numbers!")
-#     #     name = input("Enter a name: ")
-#     if name != '':
-#         nameList.append(name)
-#         print("Adding name", name, "to list")
-#         while number >= 0:
-#             number = input("Give me a number: ")
-#             #if number > 0:
-#             if number.isdigit():
-#                 number = int(number)
-#                 print("Appending",number,"to list")
-#                 numList.append(number)
-#                 break
-#     print("Break out of inner loop - go back to top of 1st while loop")
-# print("Out of list")
-# =============================================================================
+nameList = []
+numList = []
+
+name = "dummy name"
+number = 0
+
+while name != '':
+    name = input("Enter a name: ")
+    # nameList.append(name)
+    # if name.isdigit():
+    #     print("No numbers!")
+    #     name = input("Enter a name: ")
+    if name != '':
+        nameList.append(name)
+        print("Adding name", name, "to list")
+        while number >= 0:
+            number = input("Give me a number: ")
+            #if number > 0:
+            if number.isdigit():
+                number = int(number)
+                print("Appending",number,"to list")
+                numList.append(number)
+                break
+    print("Break out of inner loop - go back to top of 1st while loop")
+print("Out of list")
 
 
 
