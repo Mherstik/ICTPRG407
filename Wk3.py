@@ -5,27 +5,38 @@ Created on Fri May 13 13:13:28 2022
 @author: Marcus
 """
 
-
-nameList = []
-numList = []
-
-name = "dummy name"
-number = 0
-
-while name != '':
-    name = input("Enter a name: ")
-    # nameList.append(name)
-    # if name.isdigit():
-    #     print("No numbers!")
-    #     name = input("Enter a name: ")
-    if name != '':
-        while number != 0:
-            number = input("Give me a number: ")
-            if number.isdigit():
-                numList.append(number)
-                nameList.append(name)
+### Create a box
 
 
+
+
+# =============================================================================
+# nameList = []
+# numList = []
+# 
+# name = "dummy name"
+# number = 0
+# 
+# while name != '':
+#     name = input("Enter a name: ")
+#     # nameList.append(name)
+#     # if name.isdigit():
+#     #     print("No numbers!")
+#     #     name = input("Enter a name: ")
+#     if name != '':
+#         nameList.append(name)
+#         print("Adding name", name, "to list")
+#         while number >= 0:
+#             number = input("Give me a number: ")
+#             #if number > 0:
+#             if number.isdigit():
+#                 number = int(number)
+#                 print("Appending",number,"to list")
+#                 numList.append(number)
+#                 break
+#     print("Break out of inner loop - go back to top of 1st while loop")
+# print("Out of list")
+# =============================================================================
 
 
 
