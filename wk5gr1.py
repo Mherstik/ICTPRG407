@@ -13,7 +13,9 @@ number_guesses = int(input("How many guesses do you want: "))
 while i < number_guesses:
     i = i + 1 
     tmp = input("Give me a number: ")
-    
+    a.append(tmp)
+    print(a)
+
 
 
 # =============================================================================
