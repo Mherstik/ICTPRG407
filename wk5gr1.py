@@ -10,11 +10,26 @@ a = []
 tmp = 0
 number_guesses = int(input("How many guesses do you want: "))
 
+servers = ['A', 'B', 'C', 'D']
 
-for i in number_guesses:
-    tmp = input("Give me a number: ")
-    a.append(tmp)
-    print(a)
+
+for server in servers:
+    print("Server"+server)
+
+for server in servers:
+    while i < number_guesses:
+        i = i + 1
+        print("Server"+server+" is item number", i)
+        break
+
+
+# =============================================================================
+# 
+# for i in number_guesses:
+#     tmp = input("Give me a number: ")
+#     a.append(tmp)
+#     print(a)
+# =============================================================================
 
 # =============================================================================
 # while i < number_guesses:
