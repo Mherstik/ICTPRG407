@@ -5,6 +5,24 @@ Created on Fri May 20 08:18:26 2022
 @author: Admin
 """
 
+## count to 4
+for count in range(1,4):
+    print(count)
+
+# =============================================================================
+# import pandas as pd
+# 
+# df = pd.read_csv("test.com")
+# 
+# bill = 67
+# n = int(input("Number of people: "))
+# 
+# share = bill/n
+# print("Share of the bill is", share)
+# =============================================================================
+
+
+
 i = 0
 a = []
 tmp = 0
