@@ -5,10 +5,26 @@ Created on Fri May 20 13:01:26 2022
 @author: Marcus Herstik
 """
 
-# ## count to 4
-for count in range(1,4):
-    print(count)
+import random
+guess = ''
+while guess not in ('heads', 'tails'):
+    print('Guess the coin toss! Enter heads or tails:')
+    guess = input()
+toss = random.randint(0, 1) # 0 is tails, 1 is heads
+if toss == guess:
+    print('You got it!')
+else:
+    print('Nope! Guess again!')
+    guesss = input()
+    if toss == guess:
+        print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.')
 
+
+# # ## count to 4
+# for count in range(1,4):
+#     print(count)
 
 # import pandas as pd
 
@@ -22,22 +38,22 @@ for count in range(1,4):
 
 
 
-i = 0
-a = 10
+# i = 0
+# a = 10
 
-## only go to a max of 5
-while int(a) > 5:
-    a = int(input("How many loops do you want: "))
-    print("You must choose a number no higher than 5")
+# ## only go to a max of 5
+# while int(a) > 5:
+#     a = int(input("How many loops do you want: "))
+#     print("You must choose a number no higher than 5")
 
-servers = ['A', 'B', "C", 'D', "E"]
+# servers = ['A', 'B', "C", 'D', "E"]
 
-for server in servers:
-    while i < a:
-        i = i + 1
-        print("Server "+server)
-        ## print only that amount
-        break
+# for server in servers:
+#     while i < a:
+#         i = i + 1
+#         print("Server "+server)
+#         ## print only that amount
+#         break
 
 #a = 'string'
 #print(a)
