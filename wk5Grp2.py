@@ -20,4 +20,4 @@ while i < b:
     i = i + 2
     tmp = input("Give me a number: ")
     numbers.append(tmp)
-    print(i,"\r\n",tmp,"\r\n",numbers)
+    print("i is" + str(i),"\r\n","tmp is"+ str(tmp),"\r\n","numbers is"+ str(numbers))
