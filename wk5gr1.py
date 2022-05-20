@@ -8,21 +8,42 @@ Created on Fri May 20 08:18:26 2022
 ### Debug this file
 import random
 guess = ''
-while guess not in ('heads', 'tails'):
-    print('Guess the coin toss! Enter heads or tails:')
-    guess = input()
+
+def convert_guess():
+    global guess
+    if guess == 'heads':
+        guess = 1
+    elif guess == 'tails':
+        guess = 0
+    else:
+        print("Oops... shouldn't be here")
+
+
+def guessing(): 
+    global guess
+    while guess not in ('heads', 'tails'):
+        print('Guess the coin toss! Enter heads or tails:')
+        guess = input()
+
+    
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
-if toss == guess:
-    print('You got it!')
-else:
-    print('Nope! Guess again!')
-    guess = input()
+
+def test():
+    global guess
+    guessing()
+    convert_guess()
     if toss == guess:
         print('You got it!')
     else:
-        print('Nope. You are really bad at this game.')
+        print('Nope! Guess again!')
+        guessing()
+        convert_guess()
+        if toss == guess:
+            print('You got it!')
+        else:
+            print('Nope. You are really bad at this game.')
         
-
+test()
 
 
 # ## count to 4
