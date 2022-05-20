@@ -5,9 +5,29 @@ Created on Fri May 20 08:18:26 2022
 @author: Admin
 """
 
-## count to 4
-for count in range(1,4):
-    print(count)
+### Debug this file
+import random
+guess = ''
+while guess not in ('heads', 'tails'):
+    print('Guess the coin toss! Enter heads or tails:')
+    guess = input()
+toss = random.randint(0, 1) # 0 is tails, 1 is heads
+if toss == guess:
+    print('You got it!')
+else:
+    print('Nope! Guess again!')
+    guesss = input()
+    if toss == guess:
+        print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.')
+        
+
+
+
+# ## count to 4
+# for count in range(1,4):
+#     print(count)
 
 # =============================================================================
 # import pandas as pd
@@ -23,22 +43,24 @@ for count in range(1,4):
 
 
 
-i = 0
-a = []
-tmp = 0
-number_guesses = int(input("How many guesses do you want: "))
-
-servers = ['A', 'B', 'C', 'D']
-
-
-for server in servers:
-    print("Server"+server)
-
-for server in servers:
-    while i < number_guesses:
-        i = i + 1
-        print("Server"+server+" is item number", i)
-        break
+# =============================================================================
+# i = 0
+# a = []
+# tmp = 0
+# number_guesses = int(input("How many guesses do you want: "))
+# 
+# servers = ['A', 'B', 'C', 'D']
+# 
+# 
+# for server in servers:
+#     print("Server"+server)
+# 
+# for server in servers:
+#     while i < number_guesses:
+#         i = i + 1
+#         print("Server"+server+" is item number", i)
+#         break
+# =============================================================================
 
 
 # =============================================================================
