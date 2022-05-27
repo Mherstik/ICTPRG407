@@ -12,14 +12,16 @@ Licence: GPL v2
 """
 
 lowPage=1
-highPage=1000
+highPage=100000
 midPage=0
 target=650
 numLoops=0
 #Stop this search when we're within two pages of our target
 while ((highPage - lowPage) > 2):
         print("Now checking from page " + str(lowPage) + " to page " + str(highPage))
-        midPage = (lowPage + highPage) / 2 #find the middle of this section
+        #midPage = ((lowPage + highPage) // 2) #find the middle of this section
+        midPage = ((lowPage + highPage) / 2) #find the middle of this section
+        midPage = int(midPage)
         if midPage < target:
             lowPage = midPage +1 #our guess was too low, update our lower bound
         elif midPage > target:
