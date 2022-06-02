@@ -9,13 +9,18 @@ Created on Fri Jun  3 08:27:52 2022
 price = 3.2
 print(price)
 dollars = int(price)
+print(dollars)
+
+num1 = 1.5
+print(int(num1))
+
+num2 = str(2.1)
+print(int(float(num2)))
 
 
-
-
-
-
-
+#num3 = int(input("Input: "))
+num3 = str(3)
+print(int(num3))
 
 
 
