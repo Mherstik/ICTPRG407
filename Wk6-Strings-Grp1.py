@@ -5,26 +5,32 @@ Created on Fri Jun  3 08:27:52 2022
 @author: Marcus
 """
 
-## count the number of letters
+# # slicing 
 
-word = "banana"
-count = 0
-for letter in word:
-    if letter == 'a':
-        count = count + 1
+s = "Monty Python"
 
-print(count)
+p
 
-names = ["Tom Jones", "Barry White", "Urtha Kitt"]
-count2 = 0
-## count the number of letter T's
-for name in names:
-    for letter in name:
-        #if letter.lower() == 't':
-        if letter.lower == "t":           
-#        if letter == 't' or letter == "T":
-            count2 = count2 + 1
-print(count2)
+# ## count the number of letters
+
+# word = "banana"
+# count = 0
+# for letter in word:
+#     if letter == 'a':
+#         count = count + 1
+
+# print(count)
+
+# names = ["Tom Jones", "Barry White", "Urtha Kitt"]
+# count2 = 0
+# ## count the number of letter T's
+# for name in names:
+#     for letter in name:
+#         if letter.lower() == 't': # converts string 
+#         # if letter.lower == "t": ## doesn't convert string
+# #        if letter == 't' or letter == "T": # checks both
+#             count2 = count2 + 1
+# print(count2)
 
 # name = "Benny Hill"
 # # length = len(name)
