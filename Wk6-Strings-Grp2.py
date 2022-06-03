@@ -6,13 +6,49 @@ Created on Fri Jun  3 13:01:28 2022
 """
 
 
-fruit = ["banana", "apple", "strawberry", 'grape', 'pinapple', 'blueberry', "raspberry"]
-search = input("What do you want to search for: ")
-print("You are looking for:", search)
-if search in fruit:
-    print("True")
+c = input("What is your first word: ")
+b = input("What is your second word: ")
+
+if c > b:
+    print(c, "is after", b)
+    # if a > b:
+    #     print(a, "is after", b)
+    # else:
+    #     print(b, "is after", a)
+elif c < b:
+    print(c ,  "is before", b)
+    # if a > b:
+    #     print(a, "is after", b)
+    # else:
+    #     print(b, "is after", a)
 else:
-    print("False")
+    print("Never get here")
+
+
+# loop = True
+# # fruits = ["banana", "apple", "strawberry", 'grape', 'pinapple', 'blueberry', "raspberry"]
+# fruits = []
+
+
+# while loop == True:
+#     # print("Do you want to add things to the list")
+#     answer = input("Do you want to add things to the list (Y/N): ")
+#     if answer.upper() == "NO" or answer.upper() == "N":
+#         loop = False
+#         break
+#     print("What do you want to add")
+#     fruits.append(input())
+    
+
+# search = input("What do you want to search for: ")
+# print("You are looking for:", search)
+# print("\n")
+# for fruit in fruits:
+#     if search in fruit:
+#         print(search, "is in", fruit)
+#         #print("True")
+#     #else:
+#         #print("False")
 
 
 
