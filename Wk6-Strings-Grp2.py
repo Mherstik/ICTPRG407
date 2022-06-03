@@ -8,9 +8,13 @@ Created on Fri Jun  3 13:01:28 2022
 
 
 names = ["Tom Jones", "Barry White", "Urtha Kitt"]
-
+i = 0
 for name in names:
-    print(name)         
+    for letter in name:
+        print(i, letter)
+        i = i +1
+    print("\r####")
+    
 
 # singer = "Tom Jones"
 # length = len(singer)
