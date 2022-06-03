@@ -5,22 +5,74 @@ Created on Fri Jun  3 08:27:52 2022
 @author: Marcus
 """
 
+## count the number of letters
 
-price = 3.2
-print(price)
-dollars = int(price)
-print(dollars)
+word = "banana"
+count = 0
+for letter in word:
+    if letter == 'a':
+        count = count + 1
 
-num1 = 1.5
-print(int(num1))
+print(count)
 
-num2 = str(2.1)
-print(int(float(num2)))
+names = ["Tom Jones", "Barry White", "Urtha Kitt"]
+count2 = 0
+## count the number of letter T's
+for name in names:
+    for letter in name:
+        #if letter.lower() == 't':
+        if letter.lower == "t":           
+#        if letter == 't' or letter == "T":
+            count2 = count2 + 1
+print(count2)
 
+# name = "Benny Hill"
+# # length = len(name)
+# # print(type)
+# print(name + " is length of " + str(len(name)))
 
-#num3 = int(input("Input: "))
-num3 = str(3)
-print(int(num3))
+# # name[4] = 'p'
+
+# # print(name[15])
+
+# i = 0
+# while i < len(name):
+#     #print("Letter number " + str(i) + " is " + name[i])    
+#     print(i, name[i])
+#    # print(i)
+#     i = i +1
+
+# for letter in name:
+#     print(letter)
+    
+# names = ["Tom Jones", "Barry White", "Urtha Kitt"]
+# for singer in names:
+#     #print(singer)
+#     for letter in singer:
+#         print(letter)
+
+# =============================================================================
+# ### Convert sting numbers to int and float
+# 
+# price = 3.2
+# print(price)
+# dollars = int(price)
+# print(dollars)
+# 
+# num1 = 1.5
+# print(int(num1))
+# 
+# num2 = str(2.1)
+# print(int(float(num2)))
+# 
+# 
+# #num3 = int(input("Input: "))
+# num3 = str(3)       # works
+# print(int(num3))
+# 
+# num4 = str(4.0)
+# print(int(num4))    # doesn't work
+# =============================================================================
 
 
 
