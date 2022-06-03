@@ -6,19 +6,25 @@ Created on Fri Jun  3 08:27:52 2022
 """
 
 
+name = "Tom Jones"
 
-secondString = "piano"
+print(name.upper())
+print(name.lower())
 
-while True:
-    firstString = input("Enter some text: ")
-    if firstString == secondString:
-        print(firstString, "is equal to", secondString)
-    elif firstString < secondString:
-        print(firstString, "comes before", secondString)
-    elif firstString > secondString:
-        print(firstString, "comes after", secondString)
-    else:
-        print("Never get here!")
+
+# secondString = "piano"
+
+# while True:
+#     firstString = input("Enter some text: ")
+#     if firstString == secondString:
+#         print(firstString, "is equal to", secondString)
+#     elif firstString < secondString:
+#         print(firstString, "comes before", secondString)
+#         # break # get out of the while loop
+#     elif firstString > secondString:
+#         print(firstString, "comes after", secondString)
+#     else:
+#         print("Never get here!")
 
 
 # x = range(1,7,2)
