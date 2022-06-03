@@ -5,12 +5,83 @@ Created on Fri Jun  3 08:27:52 2022
 @author: Marcus
 """
 
+# Task 1
+# Write a program to read a line of text (i.e. a String) 
+# in from the user. Print out every second
+# character in the input line. Example:
+# Give me a line of text: Hello there, how are you?
+# Hlotee o r o?
 
-name = "Tom Jones"
 
-print(name.upper())
-print(name.lower())
 
+
+# Task 2
+# Write a program to read a line of text (i.e. a String) in from the user. Print out the line in reverse.
+# Example:
+# Give me a line of text: The rain in Spain falls mainly on the plain.
+# .nialp eht no ylniam sllaf niapS ni niar ehT
+
+
+
+
+# greet = "   Hello   Bob   "
+# print(greet.strip())
+
+
+
+
+# nstr = greet.replace("Bob", "Jane")
+# print(nstr)
+# nstr = nstr.replace("o", "x")
+# print(nstr)
+# nstr = greet.replace("o", "x")
+# print(nstr)
+
+
+
+
+
+
+# word = "pinacolada"
+# print(word.find("a"))
+# print(word.find('t'))
+
+# name = "Tom 5 Jones"
+# name2 = "Marcus herstik"
+# num = 1.0
+# dec = 2.3
+
+# print(name.upper())
+# print(name.lower())
+
+# # print("Name has \r\n", dir(name))
+# # print("\r\nNum has \r\n", dir(num))
+# # print("\r\nDec has \r\n",dir(dec))
+
+# second = 'Arthur: three!'
+# print(second.rstrip(": three!"))
+# #'ee!'
+
+# print(name2.capitalize())
+
+# for n in name:
+#     if n.isascii():
+#         print(n, " is ascii")
+#         if n.isspace():
+#             print("Its a space!!")
+#     else:
+#         print(n, " is NOT ascii")
+
+# for n in name:
+#     if n.isdigit():
+#         print(n,"It's a digit")
+#     else:
+#         print(n,"It's not a digit")
+        
+# if dec.is_integer():
+#     print("It's an integer")
+# else:
+#     print("It's not an integer")
 
 # secondString = "piano"
 
