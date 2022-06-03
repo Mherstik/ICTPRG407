@@ -5,11 +5,63 @@ Created on Fri Jun  3 08:27:52 2022
 @author: Marcus
 """
 
+
+
+secondString = "piano"
+
+while True:
+    firstString = input("Enter some text: ")
+    if firstString == secondString:
+        print(firstString, "is equal to", secondString)
+    elif firstString < secondString:
+        print(firstString, "comes before", secondString)
+    elif firstString > secondString:
+        print(firstString, "comes after", secondString)
+    else:
+        print("Never get here!")
+
+
+# x = range(1,7,2)
+# for n in x:
+#     print(n)
+
+
+# ## check for names in list
+
+# names = ["Tom Jones", "Barry White", "Urtha Kitt"]
+
+# check = "t"
+
+# for name in names:
+#     # print(name, names)
+#     if check.upper() in name.upper():
+#         print("True")
+#     else:
+#         print("False")
+
+
 # # slicing 
 
-s = "Monty Python"
+# s = "Monty Python"
 
-p
+# #print(s)
+# ask = input("What to search for: ")
+# if ask in s:
+#     print("True")
+# else:
+#     print("False")
+
+
+# print(len(s))
+# print(s[4])
+# print(s[:4]) # get upto the 4th index, exclusive
+
+# print(s[4:7])   # from 4 upto 7, excluding 7
+# print(s[:5])    # up to 5, not including 5
+# print(s[6:])    # from 6 to the end
+
+# print(s[6:7])
+
 
 # ## count the number of letters
 
