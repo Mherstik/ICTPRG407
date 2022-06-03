@@ -5,11 +5,37 @@ Created on Fri Jun  3 13:01:28 2022
 @author: Marcus
 """
 
-# ## NO NO # Take an input sentence
-# Ask for a letter and search for it in the sentence
-# Where is it?
 
-sentence = "The quick brown fox jumps over the lazy dog"
+fruit = "banana"
+search = input("What do you want to search for: ")
+
+if search in fruit:
+    print("True")
+else:
+    print("False")
+
+
+
+
+
+
+#### Part 1
+
+
+# # ## NO NO # Take an input sentence
+# # Ask for a letter and search for it in the sentence
+# # Where is it?
+# position = 0
+
+# sentence = "The quick brown fox jumps over the lazy dog"
+# search = input("Give me a letter to search for: ")
+# if search in sentence:
+#     print("The letter", search, "is in there")
+# ## where is it??
+# for letter in sentence:
+#     position = position + 1
+#     if search == letter:
+#         print(search + " is in position: ", position)
 
 
 
