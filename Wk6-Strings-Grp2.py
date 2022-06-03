@@ -5,13 +5,36 @@ Created on Fri Jun  3 13:01:28 2022
 @author: Marcus
 """
 
+# ## NO NO # Take an input sentence
+# Ask for a letter and search for it in the sentence
+# Where is it?
+
+sentence = "The quick brown fox jumps over the lazy dog"
+
+
+
+
+
+
+# ## remember the range!!
+# for x in range(6): 
+#     print(x)
+
 
 ### SLICING!!
 
-s = "Monty Python"
+# s = "Monty Python"
 
-print(s[4])
-print(s[0:4])
+# # M o n t y   P y t h o  n
+# # 0 1 2 3 4 5 6 7 8 9 10 11
+
+# print(s[4])
+# print(s[0:4]) # position 0 to 4 not including position 4
+# print("Jump from 6 to 4 with 1 space each", s[6:4:-1]) # from 6 to 4, jump in minus 1
+
+# print(s[2:9:2])
+# print(s[:4])
+# print(s[4:])
 
 ###
 
