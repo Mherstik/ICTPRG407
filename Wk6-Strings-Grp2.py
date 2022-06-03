@@ -9,3 +9,13 @@ a = 1
 b = 2.3
 c = "Tom"
 
+print("A is a", type(a))
+print("B is a", type(b))
+print("C is a", type(c))
+
+print(a + b)
+print(b * 5)
+print(c * 5)
+
+
+
