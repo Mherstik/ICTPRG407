@@ -6,23 +6,88 @@ Created on Fri Jun  3 13:01:28 2022
 """
 
 
-c = input("What is your first word: ")
-b = input("What is your second word: ")
+newStr = "Tom Jones"
 
-if c > b:
-    print(c, "is after", b)
-    # if a > b:
-    #     print(a, "is after", b)
-    # else:
-    #     print(b, "is after", a)
-elif c < b:
-    print(c ,  "is before", b)
-    # if a > b:
-    #     print(a, "is after", b)
-    # else:
-    #     print(b, "is after", a)
-else:
-    print("Never get here")
+searcher = input("What to find: ")
+print(newStr.find(searcher))
+
+if newStr[3].isspace():
+    print("its a trap")
+
+
+# myStr = "fish"
+
+# num1 = 3
+# num2 = 4.4
+
+# Str = input("Some input please: ")
+# #print(type(myStr), " can do", (dir(myStr)))
+
+# if Str.isupper():
+#     print(Str, "is uppercase")
+# else:
+#     print(Str, "is lowercase")
+# # print("\n")
+# # print(type(num1), " can do", (dir(num1)))
+# # print("\n")
+# # print(type(num2), " can do", (dir(num2)))
+
+
+# print("\n")
+# if myStr.endswith("sh"):
+#     print("It ends with 'sh'")
+
+# print("\n")
+# if myStr.startswith("f"):
+#     print("starts with f")
+
+
+
+# secondString = "piano"
+
+# while True:
+#     print("X to exit")
+#     firstString = input("Enter some text: ")
+    
+#     if firstString == secondString:
+#         print(firstString, "is equal to", secondString)
+    
+#     elif firstString.lower() == "boo":
+#         print("Oh no ... a GHOST!!")
+    
+#     elif firstString < secondString:
+#         print(firstString, "comes before", secondString)
+#         # break # get out of the while loop
+    
+#     elif firstString > secondString:
+#         print(firstString, "comes after", secondString)
+        
+    
+#     else:
+#         print("Never get here!")
+
+
+
+
+# c = input("What is your first word: ")
+# b = input("What is your second word: ")
+
+# if c > b:
+#     print(c, "is after", b)
+#     # if a > b:
+#     #     print(a, "is after", b)
+#     # else:
+#     #     print(b, "is after", a)
+# elif c < b:
+#     print(c ,  "is before", b)
+#     # if a > b:
+#     #     print(a, "is after", b)
+#     # else:
+#     #     print(b, "is after", a)
+# elif c == b:
+#     print("They are equal")
+# else:
+#     print("Never get here")
 
 
 # loop = True
