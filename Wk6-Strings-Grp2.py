@@ -6,14 +6,47 @@ Created on Fri Jun  3 13:01:28 2022
 """
 
 
+### SLICING!!
 
-names = ["Tom Jones", "Barry White", "Urtha Kitt"]
-i = 0
-for name in names:
-    for letter in name:
-        print(i, letter)
-        i = i +1
-    print("\r####")
+s = "Monty Python"
+
+print(s[4])
+print(s[0:4])
+
+###
+
+
+# myStr = "Dennis Rodman"
+# # print(len(myStr))
+# # print(myStr[4])
+# # for letter in myStr:
+# #     print(letter)
+
+# ## count the number of "n" in myStr
+
+# count = 0
+# for letter in myStr:
+#     if letter.lower() == 'd':
+#         count = count + 1
+# print(count)
+
+
+# names = ["Tom Jones", "Barry White", "Urtha Kitt"]
+# # print(len(names))
+# i = 0
+# for name in names:
+#     for letter in name:
+#         #print(i, letter)
+#         #if i == 12:
+#         #if letter == "t" or letter == "T":
+#         if letter.upper() == "T":
+#             #print("Letter",i, "is", letter)
+#             i = i +1
+# print(i)
+
+
+        
+    #print("\r####")
     
 
 # singer = "Tom Jones"
