@@ -6,8 +6,10 @@ Created on Fri Jun  3 13:01:28 2022
 """
 
 a = 1
-b = 2.3
+b = 12.7
 c = "Tom"
+
+d = str(23.9)
 
 print("A is a", type(a))
 print("B is a", type(b))
@@ -22,5 +24,12 @@ print(str(b) + c)
 print("a + b = " + (str(a) + str(b)))
 
 print(int(b))
+print(float(a))
 
+print(b//2)
+print(b%2)
+print(len(c))
+
+
+#print(int(d))
 
