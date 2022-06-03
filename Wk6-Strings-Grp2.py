@@ -6,9 +6,9 @@ Created on Fri Jun  3 13:01:28 2022
 """
 
 
-fruit = "banana"
+fruit = ["banana", "apple", "strawberry", 'grape', 'pinapple', 'blueberry', "raspberry"]
 search = input("What do you want to search for: ")
-
+print("You are looking for:", search)
 if search in fruit:
     print("True")
 else:
