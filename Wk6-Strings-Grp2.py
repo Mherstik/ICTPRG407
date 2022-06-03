@@ -14,8 +14,13 @@ print("B is a", type(b))
 print("C is a", type(c))
 
 print(a + b)
-print(b * 5)
-print(c * 5)
+print(b * 5) # float * 5
+print(c * 5) # string * 5
 
+print(str(b) + c)
+
+print("a + b = " + (str(a) + str(b)))
+
+print(int(b))
 
 
