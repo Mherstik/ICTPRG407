@@ -12,7 +12,15 @@ Created on Fri Jun  3 08:27:52 2022
 # Give me a line of text: Hello there, how are you?
 # Hlotee o r o?
 
-
+text = input("Give me a line of text: ")
+# print(text)
+text = text.replace(" ", "")
+ind = 1
+for t in text:
+    # print(ind, t)
+    if ind%2 == 0:
+        print(t)
+    ind = ind + 1
 
 
 # Task 2
@@ -20,7 +28,9 @@ Created on Fri Jun  3 08:27:52 2022
 # Example:
 # Give me a line of text: The rain in Spain falls mainly on the plain.
 # .nialp eht no ylniam sllaf niapS ni niar ehT
-
+text = input("Give me a line of text: ")
+txt = text[::-1]   ## [start:end:step/jump]
+print(txt)
 
 
 
