@@ -19,8 +19,8 @@ outputFile = open(fileName, "w")
 while i < lines:
     r1 = random.randint(0,50)
     r2 = random.randint(0,50)
-    r3 = random.random(0,10)
-    outputFile.write(str(r1) + "," + str(r2) + "," + str(r3) +"\n")
+    r3 = random.randint(0,10)
+    outputFile.write(str(r1) + " , " + str(r2) + " , " + str(r3) +"\n")
     i =+ 1
 
 ## close the file
