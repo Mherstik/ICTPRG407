@@ -9,7 +9,8 @@ import random
 
 ## Generate random numbers
 i = 0
-fileName = "randomnum.txt"
+# fileName = "randomnum.txt"
+fileName = input("What to call it: ")
 names = ["Tom","Jane","Liz", "Peter", "Mary", "Bob"]
 # lines = int(input("How many lines: "))
 

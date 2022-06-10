@@ -5,9 +5,9 @@ Created on Fri Jun 10 08:22:29 2022
 @author: Marcus
 """
 
-inputFile = open("randomnum.txt", "r")
+inputFile = open("salary.csv", "r")
 
-outputFile = open("newSalary.txt", "w")
+outputFile = open("newSalary.csv", "w")
 
 for line in inputFile:
     ## Trim the new lines
@@ -21,7 +21,7 @@ for line in inputFile:
         outputFile.write(line)
     else: 
         ## add 5%
-        num2 = float(num2) * 2
+        num2 = float(num2) * 1.05
         outputFile.write(name + "," + str(int(num2)) + "," + empid +"\n")
 
 inputFile.close()
