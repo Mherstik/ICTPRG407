@@ -9,20 +9,23 @@ inputFile = open("salary.csv", "r")
 
 outputFile = open("newSalary.csv", "w")
 
-for line in inputFile:
-    ## Trim the new lines
-    line2 = line.rstrip("\n")
-    
-    ## split the line into fields
-    name,num2,empid = line2.split(",")
-    
-    ## Check for salary
-    if num2.isdigit() == False:
-        outputFile.write(line)
-    else: 
-        ## add 5%
-        num2 = float(num2) * 1.05
-        outputFile.write(name + "," + str(int(num2)) + "," + empid +"\n")
+def updateSalary():
+    for line in inputFile:
+        ## Trim the new lines
+        line2 = line.rstrip("\n")
+        
+        ## split the line into fields
+        name,num2,empid = line2.split(",")
+        
+        ## Check for salary
+        if num2.isdigit() == False:
+            outputFile.write(line)
+        else: 
+            ## add 5%
+            num2 = float(num2) * 1.05
+            outputFile.write(name + "," + str(int(num2)) + "," + empid +"\n")
+
+updateSalary()
 
 inputFile.close()
 outputFile.close()
