@@ -5,20 +5,44 @@ Created on Fri Jun 10 08:22:29 2022
 @author: Marcus
 """
 
-### Write to a file
+inputFile = open("randomnum.txt", "r")
 
-fileName = input("What is the file name to create: ")
+outputFile = open("newSalary.txt", "w")
 
-# open the file FOR WRITING!
-outputFile = open(fileName, "w")
-outputFile.write("This is NOT the first line\n")
-outputFile.write("This is the second line" + str(23) + "\n")
-outputFile.write("Line3\n")
+for line in inputFile:
+    ## Trim the new lines
+    line2 = line.rstrip("\n")
+    
+    ## split the line into fields
+    name,num2,empid = line2.split(",")
+    
+    ## Check for salary
+    if num2.isdigit() == False:
+        outputFile.write(line)
+    else: 
+        ## add 5%
+        num2 = float(num2) * 2
+        outputFile.write(name + "," + str(int(num2)) + "," + empid +"\n")
 
-### Close the file
-
+inputFile.close()
 outputFile.close()
 
+# =============================================================================
+# ### Write to a file
+# 
+# fileName = input("What is the file name to create: ")
+# 
+# # open the file FOR WRITING!
+# outputFile = open(fileName, "w")
+# outputFile.write("This is NOT the first line\n")
+# outputFile.write("This is the second line" + str(23) + "\n")
+# outputFile.write("Line3\n")
+# 
+# ### Close the file
+# 
+# outputFile.close()
+# 
+# =============================================================================
 
 # =============================================================================
 # ### Read a file
