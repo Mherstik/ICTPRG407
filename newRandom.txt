@@ -1,0 +1,7 @@
+Name,salary,empid
+Tom,salary: 62,4
+Jane,salary: 10,3
+Liz,was,here
+Peter,salary: 78,6
+Mary,salary: 8,1
+Bob,salary: 68,7

@@ -1,0 +1,7 @@
+Name,Salary,Dept
+Tom,38475,7
+Jane,47504,0
+Liz,29007,2
+Peter,45241,6
+Mary,20665,6
+Bob,43463,2
